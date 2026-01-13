@@ -7,11 +7,14 @@ void setup() {
 
 
 //🟢Draw Procedure - Runs on Repeat
-draw = function(){
- 
+draw = function(  ){
+
+
+
+  
   background(255,255,255,0);
   
-
+ ellipse(300,390,30,240);
 
 
 
