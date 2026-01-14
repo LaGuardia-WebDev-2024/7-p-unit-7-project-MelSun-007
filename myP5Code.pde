@@ -4,8 +4,8 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
-
+var FlameY=(390)
+var SpaceshipY=(180)
 //🟢Draw Procedure - Runs on Repeat
 draw = function(  ){
 
@@ -14,13 +14,22 @@ draw = function(  ){
   
   background(255,255,255,0);
   
- ellipse(300,390,30,240);
+ ellipse(300,FlameY,39,240)
+fill(250,25,30,140);
 
+ellipse(300,FlameY,30,240)
+ fill(255,255,140,1000);
+ 
+ rect(274,SpaceshipY,50,100);
 
 
 
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
+
+FlameY=FlameY-4
+SpaceshipY=SpaceshipY-4
+
 
 }
 
