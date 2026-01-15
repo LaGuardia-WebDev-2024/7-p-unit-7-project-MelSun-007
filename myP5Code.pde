@@ -6,14 +6,18 @@ void setup() {
 //🎯Variable Declarations Go Here
 var FlameY=(390)
 var SpaceshipY=(180)
+var SpaceshiptopY1=(150)
+var SpaceshiptopY2=(181)
+
 //🟢Draw Procedure - Runs on Repeat
 draw = function(  ){
 
 
 
+ background(255,255,255,0);
   
-  background(255,255,255,0);
-  
+
+
  ellipse(300,FlameY,39,240)
 fill(250,25,30,140);
 
@@ -21,6 +25,7 @@ ellipse(300,FlameY,30,240)
  fill(255,255,140,1000);
  
  rect(274,SpaceshipY,50,100);
+triangle(300,SpaceshiptopY1,326,SpaceshiptopY2,273,SpaceshiptopY2);
 
 
 
@@ -29,8 +34,8 @@ ellipse(300,FlameY,30,240)
 
 FlameY=FlameY-4
 SpaceshipY=SpaceshipY-4
-
-
+SpaceshiptopY1=SpaceshiptopY1-4
+SpaceshiptopY2=SpaceshiptopY2-4
 }
 
 //🟡Extra FUN Features Ms. Hall Added
